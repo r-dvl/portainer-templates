@@ -1508,7 +1508,7 @@
     },
     {
       "id": 69,
-      "type": 2,
+      "type": 1,
       "title": "AdGuard Home",
       "description": "Network wide ad blocker.",
       "note": "Port 3000 is only used for initial setup.",
