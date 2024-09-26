@@ -1517,7 +1517,7 @@
       "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/adguard_logo_icon_167905.png",
       "repository": {
         "url": "https://github.com/r-dvl/portainer-templates",
-        "stackfile": "stacks/adguard-home/docker-compose.yml"
+        "stackfile": "stacks/adguard-home/docker-stack.yml"
       }
     }
   ]
