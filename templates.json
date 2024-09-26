@@ -1565,6 +1565,18 @@
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/bazarr/docker-compose.yml"
       },
+      "image": "linuxserver/bazarr:latest",
+      "ports": [
+        "6767/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ],
       "env": [
         {
           "name": "PGID",
