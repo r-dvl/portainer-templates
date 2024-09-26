@@ -1544,7 +1544,7 @@
       "type": 1,
       "title": "Bazarr",
       "description": "Bazarr is a companion application to Sonarr and Radarr. It manage and download subtitles based on your requirements.",
-      "categories": ["Arr"],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/bazarr-light.png",
       "repository": {
