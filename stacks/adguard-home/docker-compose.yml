@@ -1,0 +1,17 @@
+services:
+  adguard-home:
+    container_name: adguard-home
+    image: adguard/adguardhome:latest
+    ports:
+      - "53:53/tcp" # Plain DNS
+      - "53:53/udp" # Plain DNS
+      - "80:80/tcp" # UI
+      - "443:443/tcp" # UI
+      - "443:443/udp" # UI
+      - "3000:3000/tcp" # UI
+      - "853:853/tcp" # DNS Over TLS
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - /DATA/AppData/adguard-home/opt/adguardhome/work:/opt/adguardhome/work
+      - /DATA/AppData/adguard-home/opt/adguardhome/conf:/opt/adguardhome/conf

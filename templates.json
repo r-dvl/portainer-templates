@@ -441,7 +441,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "swarm/monitoring/docker-compose.yml"
       },
       "env": [
@@ -465,7 +465,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/redis.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/redis-cluster/docker-stack.yaml"
       },
       "env": [
@@ -824,7 +824,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/portainer.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/portainer-agent/docker-stack.yml"
       }
     },
@@ -853,7 +853,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ironfunctions.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/ironfunctions/docker-stack.yml"
       }
     },
@@ -867,7 +867,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cockroachdb.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/cockroachdb/docker-stack.yml"
       }
     },
@@ -881,7 +881,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/wordpress/docker-stack.yml"
       },
       "env": [
@@ -902,7 +902,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/wordpress.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/wordpress/docker-compose.yml"
       },
       "env": [
@@ -923,7 +923,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/openamt/docker-compose.yml"
       },
       "env": [
@@ -969,7 +969,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/microsoft.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/microsoft-oms/docker-stack.yml"
       },
       "env": [
@@ -994,7 +994,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/sematext_agent.png",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/sematext-agent-docker/docker-stack.yml"
       },
       "env": [
@@ -1017,7 +1017,7 @@
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/datadog_agent.png",
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/datadog-agent/docker-stack.yml"
       },
       "env": [
@@ -1035,7 +1035,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/intel.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/fdo/docker-stack.yml"
       },
       "env": [
@@ -1057,7 +1057,7 @@
       "categories": ["PaaS"],
       "platform": "linux",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/dokku/docker-compose.yml"
       },
       "env": [
@@ -1113,7 +1113,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/liveswitch/docker-stack.yml"
       },
       "env": [
@@ -1132,7 +1132,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/liveswitch/docker-compose.yml"
       },
       "env": [
@@ -1151,7 +1151,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/tosibox.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/tosibox/docker-compose.yml"
       },
       "env": [
@@ -1170,7 +1170,7 @@
       "note": "Connect Modbus TCP Sensors/PLCs and provide the data via OPC UA and MQTT",
       "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0?s=80&r=g&d=404",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/softing-edgeconnector-modbus/docker-compose.yml"
       }
     },
@@ -1182,7 +1182,7 @@
       "description": "Access Siemens SINUMERIK 840D sl/pl controllers and provide data via OPC UA and MQTT",
       "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0?s=80&r=g&d=404",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/softing-edgeconnector-840d/docker-compose.yml"
       }
     },
@@ -1194,7 +1194,7 @@
       "description": "Connect Siemens SIMATIC S7-300/400/1200/1500 PLCs and provide the data via OPC UA and MQTT",
       "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0?s=80&r=g&d=404",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/softing-edgeconnector-siemens/docker-compose.yml"
       }
     },
@@ -1206,7 +1206,7 @@
       "description": "Connect FANUC CNCs and provide the data via OPC UA and MQTT",
       "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0?s=80&r=g&d=404",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/softing-edgeconnector-fanuc-cnc/docker-compose.yml"
       },
       "env": [
@@ -1224,7 +1224,7 @@
       "description": "Offers a powerful OPC UA aggregation service which provides data via OPC UA, as well as MQTT",
       "logo": "https://www.gravatar.com/avatar/c7d3730588d3f501d6753aa22a731bc0?s=80&r=g&d=404",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/softing-edgeconnector-aggregator/docker-compose.yml"
       },
       "env": [
@@ -1243,7 +1243,7 @@
       "note": "More information about the <a href=\"https://www.opc-router.com/terms-of-use-and-eula/?utm_source=DockerHub_runtime&utm_medium=click&utm_campaign=TermsOfUseAndEula\" target=\"_blank\">EULA</a>.",
       "logo": "https://store-images.s-microsoft.com/image/apps.45485.5f358ea4-e35f-478a-ab92-e85946891f86.b38fbf34-c2b9-4714-9d8a-1232c004df99.4469177b-aba0-4422-ad40-218ff1d967fb",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/opc-router/docker-compose.yml"
       },
       "env": [
@@ -1278,7 +1278,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/cedalo.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/cedalo-mosquitto-mc/docker-compose.yml"
       },
       "env": [
@@ -1311,7 +1311,7 @@
       "platform": "linux",
       "logo": "https://avatars.githubusercontent.com/u/5375661?s=200&v=4",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/node-red/docker-compose.yml"
       },
       "env": [
@@ -1331,7 +1331,7 @@
       "platform": "linux",
       "logo": "https://store-images.s-microsoft.com/image/apps.61965.8c5e9f22-6a18-49a8-b8b9-6632de74e76c.3c45348f-0adf-4238-b024-bb993be0b664.ccdeeb79-9767-4e92-af5a-1b56f274aa99",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/influxdb/docker-compose.yml"
       },
       "env": [
@@ -1362,7 +1362,7 @@
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/docker-library/docs/68aa4264fa058f323993fdaceacd63a8acbbeb48/emqx/logo.svg",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/emqx/docker-compose.yml"
       },
       "env": [
@@ -1385,7 +1385,7 @@
       "platform": "linux",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grafana_logo.svg/1200px-Grafana_logo.svg.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/grafana/docker-compose.yml"
       },
       "env": [
@@ -1409,7 +1409,7 @@
       "platform": "linux",
       "logo": "https://pbs.twimg.com/profile_images/859108636504805376/QHpq7wuh_400x400.jpg",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/ignition_gw/docker-compose.yml"
       },
       "env": [
@@ -1466,7 +1466,7 @@
       "platform": "linux",
       "logo": "https://pbs.twimg.com/profile_images/1658849767865167876/hA5OXD9m_400x400.jpg",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/timescaledb/docker-compose.yml"
       },
       "env": [
@@ -1485,7 +1485,7 @@
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/inray-manubes.png",
       "repository": {
-        "url": "https://github.com/portainer/templates",
+        "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "edge/inray-manubes-edge-node/docker-compose.yml"
       },
       "env": [
@@ -1505,6 +1505,20 @@
           ]
         }
       ]
+    },
+    {
+      "id": 69,
+      "type": 2,
+      "title": "AdGuard Home",
+      "description": "Network wide ad blocker.",
+      "note": "Port 3000 is only used for initial setup.",
+      "categories": ["Network"],
+      "platform": "linux",
+      "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/adguard_logo_icon_167905.png",
+      "repository": {
+        "url": "https://github.com/r-dvl/portainer-templates",
+        "stackfile": "stacks/adguard-home/docker-compose.yml"
+      }
     }
   ]
 }
