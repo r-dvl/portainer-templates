@@ -1519,6 +1519,25 @@
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/adguard-home/docker-compose.yml"
       }
+    },
+    {
+      "id": 70,
+      "type": 1,
+      "title": "Authentik",
+      "description": "Authentik is an open-source Identity Provider that emphasizes flexibility and versatility, with support for a wide set of protocols.",
+      "categories": ["Network"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/authentik-orange-icon-1024x783-nmuex5ud.png",
+      "repository": {
+        "url": "https://github.com/r-dvl/portainer-templates",
+        "stackfile": "stacks/authentik/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "AUTHENTIK_SECRET_KEY",
+          "label": "Password"
+        }
+      ]
     }
   ]
 }
