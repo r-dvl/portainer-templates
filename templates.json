@@ -1538,6 +1538,33 @@
           "label": "Password"
         }
       ]
+    },
+    {
+      "id": 71,
+      "type": 1,
+      "title": "Bazarr",
+      "description": "Bazarr is a companion application to Sonarr and Radarr. It manage and download subtitles based on your requirements.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/bazarr-light.png",
+      "repository": {
+        "url": "https://github.com/r-dvl/portainer-templates",
+        "stackfile": "stacks/bazarr/docker-compose.yml"
+      },
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone"
+        }
+      ]
     }
   ]
 }
