@@ -1391,11 +1391,13 @@
       "env": [
         {
           "name": "grafana_admin",
-          "label": "Grafana Dashboard Username"
+          "label": "Grafana Dashboard Username",
+          "default": "admin"
         },
         {
           "name": "grafana_password",
-          "label": "Grafana Dashboard Password"
+          "label": "Grafana Dashboard Password",
+          "default": "admin"
         }
       ]
     },
@@ -1423,7 +1425,7 @@
               "default": true
             }
           ]
-        }, 
+        },
         {
           "name": "adminuser",
           "label": "Gateway UI Admin Username"
@@ -1669,11 +1671,13 @@
         },
         {
           "name": "CUSTOM_USER",
-          "label": "Username"
+          "label": "Username",
+          "default": "admin"
         },
         {
           "name": "PASSWORD",
-          "label": "Password"
+          "label": "Password",
+          "default": "admin"
         }
       ]
     },
@@ -1748,7 +1752,18 @@
         {
           "name": "LOG_HTML",
           "label": "Log html",
-          "default": "false"
+          "select": [
+            {
+              "text": "Enabled",
+              "value": "true",
+              "default": false
+            },
+            {
+              "text": "Disabled",
+              "value": "false",
+              "default": true
+            }
+          ]
         },
         {
           "name": "LOG_LEVEL",
@@ -1763,7 +1778,18 @@
         {
           "name": "PROMETHEUS_ENABLED",
           "label": "Prometheus enabled",
-          "default": "false"
+          "select": [
+            {
+              "text": "Enabled",
+              "value": "true",
+              "default": false
+            },
+            {
+              "text": "Disabled",
+              "value": "false",
+              "default": true
+            }
+          ]
         },
         {
           "name": "PROMETHEUS_PORT",
@@ -2114,6 +2140,7 @@
       "type": 1,
       "title": "QBittorrent",
       "description": "The Qbittorrent project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.",
+      "note": "Default username: admin, default password: adminadmin",
       "categories": ["Arr"],
       "platform": "linux",
       "logo": "https://static-00.iconduck.com/assets.00/qbittorrent-icon-2048x2048-kbb7ayst.png",
