@@ -1715,7 +1715,7 @@
       "ports": [
         "8443/tcp"
       ],
-      "volumes": [
+      "env": [
         {
           "name": "PGID",
           "label": "PGID",
@@ -1746,7 +1746,7 @@
         "8191/tcp",
         "8192/tcp"
       ],
-      "volumes": [
+      "env": [
         {
           "name": "CAPTCHA_SOLVER",
           "label": "Captcha solver",
@@ -1781,6 +1781,28 @@
           "name": "TZ",
           "label": "Time Zone",
           "default": "Europe/Madrid"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "type": 1,
+      "title": "Homepage",
+      "description": "A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.",
+      "note": "Documentation: https://github.com/gethomepage/homepage",
+      "categories": ["Homelab"],
+      "platform": "linux",
+      "logo": "https://user-images.githubusercontent.com/88257202/194461324-cd562d2d-2a96-4fbc-8e93-80085c514f0d.png",
+      "image": "ghcr.io/gethomepage/homepage:latest",
+      "ports": [
+        "3000/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/app/config"
+        },
+        {
+          "container": "/var/run/docker.sock"
         }
       ]
     }
