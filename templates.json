@@ -1587,6 +1587,45 @@
           "label": "Time Zone"
         }
       ]
+    },
+    {
+      "id": 72,
+      "type": 1,
+      "title": "Calibre Web",
+      "description": "Web app for browsing, reading and downloading eBooks stored in a Calibre database",
+      "categories": ["Media"],
+      "platform": "linux",
+      "logo": "https://th.bing.com/th/id/R.60f62bc8e9ee1df35780b8f96753f433?rik=ZIiztdszqSgXHw&pid=ImgRaw&r=0",
+      "image": "linuxserver/calibre-web:latest",
+      "ports": [
+        "8083/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/books"
+        }
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone"
+        },
+        {
+          "name": "DOCKER_MODS",
+          "label": "Docker mods"
+        }
+      ]
     }
   ]
 }
