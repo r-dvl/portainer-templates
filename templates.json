@@ -2001,6 +2001,82 @@
           "container": "/DATA"
         }
       ]
+    },
+    {
+      "id": 83,
+      "type": 1,
+      "title": "Radarr",
+      "description": "Movie organizer/manager for usenet and torrent users.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/radarr-icon-922x1024-esiz37v4.png",
+      "image": "linuxserver/radarr:latest",
+      "ports": [
+        "7878/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "type": 1,
+      "title": "Readarr",
+      "description": "Book Manager and Automation (Sonarr for Ebooks).",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://images.opencollective.com/readarr/2f7d366/logo/256.png",
+      "image": "linuxserver/readarr:develop",
+      "ports": [
+        "8787/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ]
     }
   ]
 }
