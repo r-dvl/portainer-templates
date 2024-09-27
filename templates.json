@@ -2182,6 +2182,67 @@
           "label": "Time Zone",
           "default": "Europe/Madrid"
         }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "type": 1,
+      "title": "Vaultwarden",
+      "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.",
+      "categories": ["Security"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/bitwarden-icon-2048x2048-dpfdlf2a.png",
+      "image": "vaultwarden/server:latest",
+      "ports": [
+        "80/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/data"
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "type": 1,
+      "title": "Plex",
+      "description": "Plex gives you one place to find and access all the media that matters to you.",
+      "categories": ["Media"],
+      "platform": "linux",
+      "logo": "https://tautulli.com/images/logo-circle.png",
+      "image": "linuxserver/plex:latest",
+      "ports": [
+        "8181/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "VERSION",
+          "label": "Version",
+          "default": "docker"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/Media"
+        }
       ]
     }
   ]
