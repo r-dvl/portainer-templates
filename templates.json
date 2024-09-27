@@ -1905,11 +1905,54 @@
           "label": "Auto Update",
           "select": [
             {
-              "text": "Active",
+              "text": "Enabled",
               "value": "true",
               "default": true
+            },
+            {
+              "text": "Disabled",
+              "value": "false",
+              "default": false
             }
           ]
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/downloads"
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "type": 1,
+      "title": "Lidarr",
+      "description": "API Support for your favorite torrent trackers.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://lignux.com/wp-content/uploads/2021/06/Jackett-logo.png",
+      "image": "linuxserver/jackett:latest",
+      "ports": [
+        "9117/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
         }
       ],
       "volumes": [
