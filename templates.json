@@ -1732,6 +1732,57 @@
           "default": "Europe/Madrid"
         }
       ]
+    },
+    {
+      "id": 76,
+      "type": 1,
+      "title": "Falresolverr",
+      "description": "Proxy server to bypass Cloudflare protection.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://th.bing.com/th/id/R.5598488e0590cd82cc191d2caab23b47?rik=3AvH55FakTmU2Q&riu=http%3a%2f%2fwww.altoros.com%2fwp-content%2fuploads%2f2014%2f06%2ficon_1_350%D1%85216.png&ehk=7CCQTT0IsViodq8gNrAF3kPBaJEkSYLEPtbte%2f90TnA%3d&risl=&pid=ImgRaw&r=0",
+      "image": "flaresolverr/flaresolverr:latest",
+      "ports": [
+        "8191/tcp",
+        "8192/tcp"
+      ],
+      "volumes": [
+        {
+          "name": "CAPTCHA_SOLVER",
+          "label": "Captcha solver",
+          "default": "none"
+        },
+        {
+          "name": "LOG_HTML",
+          "label": "Log html",
+          "default": "false"
+        },
+        {
+          "name": "LOG_LEVEL",
+          "label": "Log leve",
+          "default": "info"
+        },
+        {
+          "name": "PORT",
+          "label": "Port",
+          "default": "8191"
+        },
+        {
+          "name": "PROMETHEUS_ENABLED",
+          "label": "Prometheus enabled",
+          "default": "false"
+        },
+        {
+          "name": "PROMETHEUS_PORT",
+          "label": "Prometheus port",
+          "default": "8192"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ]
     }
   ]
 }
