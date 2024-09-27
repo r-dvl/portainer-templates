@@ -2378,6 +2378,54 @@
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/seafile/docker-compose.yml"
       }
-    }
+    },
+    {
+      "id": 94,
+      "type": 1,
+      "title": "NZBGet",
+      "description": "Efficient Usenet downloader.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://th.bing.com/th/id/OIP.xSjnEbkYFaizgbOJSjF_twAAAA?rs=1&pid=ImgDetMain",
+      "image": "linuxserver/nzbget:latest",
+      "ports": [
+        "6789/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        },
+        {
+          "name": "NZBGET_USER",
+          "label": "Username",
+          "default": "admin"
+        },
+        {
+          "name": "NZBGET_PASS",
+          "label": "Password",
+          "default": "admin"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ]
+    },
   ]
 }
