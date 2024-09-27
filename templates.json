@@ -1593,6 +1593,7 @@
       "type": 1,
       "title": "Calibre Web",
       "description": "Web app for browsing, reading and downloading eBooks stored in a Calibre database",
+      "note": "For docker mods content: https://github.com/linuxserver/docker-calibre-web",
       "categories": ["Media"],
       "platform": "linux",
       "logo": "https://th.bing.com/th/id/R.60f62bc8e9ee1df35780b8f96753f433?rik=ZIiztdszqSgXHw&pid=ImgRaw&r=0",
