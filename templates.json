@@ -1545,14 +1545,7 @@
       "repository": {
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/authentik/docker-compose.yml"
-      },
-      "env": [
-        {
-          "name": "AUTHENTIK_SECRET_KEY",
-          "label": "Password",
-          "default": "secret"
-        }
-      ]
+      }
     },
     {
       "id": 71,
