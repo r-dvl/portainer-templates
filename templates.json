@@ -1930,10 +1930,10 @@
       "id": 81,
       "type": 1,
       "title": "Lidarr",
-      "description": "API Support for your favorite torrent trackers.",
+      "description": "Looks and smells like Sonarr but made for music..",
       "categories": ["Arr"],
       "platform": "linux",
-      "logo": "https://lignux.com/wp-content/uploads/2021/06/Jackett-logo.png",
+      "logo": "https://b.thumbs.redditmedia.com/I0eJLPD4tT36qV2Jr5alNXC_QAhZvzfexiqo6GrCvVY.png",
       "image": "linuxserver/jackett:latest",
       "ports": [
         "9117/tcp"
@@ -1960,7 +1960,7 @@
           "container": "/config"
         },
         {
-          "container": "/downloads"
+          "container": "/DATA"
         }
       ]
     }
