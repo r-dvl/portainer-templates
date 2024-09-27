@@ -2214,7 +2214,7 @@
       "description": "Plex gives you one place to find and access all the media that matters to you.",
       "categories": ["Media"],
       "platform": "linux",
-      "logo": "https://tautulli.com/images/logo-circle.png",
+      "logo": "https://th.bing.com/th/id/OIP.D15448TzysfzP93bOo1auQAAAA?rs=1&pid=ImgDetMain",
       "image": "linuxserver/plex:latest",
       "ports": [
         "32400/tcp"
@@ -2242,6 +2242,41 @@
         },
         {
           "container": "/Media"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "type": 1,
+      "title": "Overseerr",
+      "description": "Request management and media discovery tool for the Plex ecosystem.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://seedit4.me/assets/img/icons/software/overseerr.png",
+      "image": "linuxserver/overseerr:latest",
+      "ports": [
+        "5055/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
         }
       ]
     }
