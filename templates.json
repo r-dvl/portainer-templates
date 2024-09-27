@@ -2345,6 +2345,19 @@
           "container": "/data"
         }
       ]
+    },
+    {
+      "id": 93,
+      "type": 3,
+      "title": "Seafile",
+      "description": "Seafile is an open source file sync and share platform, focusing on reliability and performance.",
+      "categories": ["Filesystem"],
+      "platform": "linux",
+      "logo": "https://www.seafile.com/media/img/seafile-logo.png",
+      "repository": {
+        "url": "https://github.com/r-dvl/portainer-templates",
+        "stackfile": "stacks/seafile/docker-compose.yml"
+      }
     }
   ]
 }
