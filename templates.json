@@ -1871,6 +1871,49 @@
           "container": "/etc/influxdb2"
         }
       ]
+    },
+    {
+      "id": 80,
+      "type": 1,
+      "title": "Jackett",
+      "description": "API Support for your favorite torrent trackers.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://lignux.com/wp-content/uploads/2021/06/Jackett-logo.png",
+      "image": "linuxserver/jackett:latest",
+      "ports": [
+        "9117/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        },
+        {
+          "name": "AUTO_UPDATE",
+          "default": "Y",
+          "preset": true
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/downloads"
+        }
+      ]
     }
   ]
 }
