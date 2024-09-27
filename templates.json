@@ -1626,6 +1626,51 @@
           "label": "Docker mods"
         }
       ]
+    },
+    {
+      "id": 73,
+      "type": 1,
+      "title": "Calibre",
+      "description": "Calibre is a powerful and easy to use e-book manager.",
+      "categories": ["Media"],
+      "platform": "linux",
+      "logo": "https://th.bing.com/th/id/R.bc8e01f44b64ba43b080313063a11872?rik=2OqgbfaGEr7tJQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fcalibre-logo-png-file-calibre-logo-3-png-1024.png&ehk=4WAUl8PSf%2b%2bkx5kpJjaDVI8PWE1bY6Qw0PxBq0Rgbuk%3d&risl=&pid=ImgRaw&r=0",
+      "image": "linuxserver/calibre:latest",
+      "ports": [
+        "8080/tcp",
+        "8181/tcp",
+        "8081/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone"
+        },
+        {
+          "name": "CUSTOM_USER",
+          "label": "Username"
+        },
+        {
+          "name": "PASSWORD",
+          "label": "Password"
+        }
+      ]
     }
   ]
 }
