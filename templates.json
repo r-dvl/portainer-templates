@@ -1671,6 +1671,24 @@
           "label": "Password"
         }
       ]
+    },
+    {
+      "id": 74,
+      "type": 1,
+      "title": "Cloudflared",
+      "description": "Cloudflare Tunnel client.",
+      "categories": ["Network"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/cloudflare-icon-2048x926-mxn8koxq.png",
+      "image": "wisdomsky/cloudflared-web:latest",
+      "ports": [
+        "14333/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        }
+      ]
     }
   ]
 }
