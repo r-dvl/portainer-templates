@@ -970,7 +970,7 @@
       "type": 3,
       "title": "Authentik",
       "description": "Authentik is an open-source Identity Provider that emphasizes flexibility and versatility, with support for a wide set of protocols.",
-      "categories": ["Network"],
+      "categories": ["Security"],
       "platform": "linux",
       "logo": "https://static-00.iconduck.com/assets.00/authentik-orange-icon-1024x783-nmuex5ud.png",
       "repository": {
@@ -1238,7 +1238,7 @@
       "title": "Homepage",
       "description": "A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.",
       "note": "Documentation: https://github.com/gethomepage/homepage",
-      "categories": ["Homelab"],
+      "categories": ["Monitoring"],
       "platform": "linux",
       "logo": "https://user-images.githubusercontent.com/88257202/194461324-cd562d2d-2a96-4fbc-8e93-80085c514f0d.png",
       "image": "ghcr.io/gethomepage/homepage:latest",
