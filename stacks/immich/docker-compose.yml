@@ -1,0 +1,81 @@
+services:
+  database:
+    image: tensorchord/pgvecto-rs:pg14-v0.2.0
+    container_name: immich-postgres
+    environment:
+      - POSTGRES_DB=immich
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_USER=postgres
+      - POSTGRES_INITDB_ARGS='--data-checksums'
+    volumes:
+      - /opt/immich/data:/var/lib/postgresql/data
+    privileged: true
+    command: ["postgres", "-c", "shared_preload_libraries=vectors.so", "-c", 'search_path="$$user", public, vectors', "-c", "logging_collector=on", "-c", "max_wal_size=2GB", "-c", "shared_buffers=512MB", "-c", "wal_compression=on"]
+    restart: unless-stopped
+
+  redis:
+    image: redis:6.2-alpine
+    container_name: immich-redis
+    healthcheck:
+      test: redis-cli ping || exit 1
+    restart: unless-stopped
+
+  immich-machine-learning:
+    image: ghcr.io/immich-app/immich-machine-learning:release
+    container_name: immich-machine-learning
+    environment:
+      - DB_DATABASE_NAME=immich
+      - DB_HOSTNAME=immich-postgres
+      - DB_PASSWORD=secret
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - REDIS_HOSTNAME=immich-redis
+    volumes:
+      - /DATA/AppData/immich/data/model-cache:/cache
+    healthcheck:
+      disable: false
+    restart: unless-stopped
+
+  immich-microservices:
+    image: ghcr.io/immich-app/immich-server:release
+    container_name: immich-microservices
+    command:
+      - start.sh
+      - microservices
+    depends_on:
+      - database
+      - redis
+    environment:
+      - DB_DATABASE_NAME=immich
+      - DB_HOSTNAME=immich-postgres
+      - DB_PASSWORD=secret
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - REDIS_HOSTNAME=immich-redis
+    volumes:
+      - /DATA/Gallery:/usr/src/app/upload
+      - /etc/localtime:/etc/localtime
+    restart: unless-stopped
+
+  immich-server:
+    image: ghcr.io/immich-app/immich-server:release
+    container_name: immich-server
+    depends_on:
+      - database
+      - redis
+    environment:
+      - DB_DATABASE_NAME=immich
+      - DB_HOSTNAME=immich-postgres
+      - DB_PASSWORD=secret
+      - DB_PORT=5432
+      - DB_USERNAME=postgres
+      - IMMICH_MACHINE_LEARNING_URL=http://immich-machine-learning:3003
+      - REDIS_HOSTNAME=immich-redis
+    ports:
+      - "3001:3001"
+    volumes:
+      - /DATA/Gallery:/usr/src/app/upload
+      - /etc/localtime:/etc/localtime
+    healthcheck:
+      disable: false
+    restart: unless-stopped
