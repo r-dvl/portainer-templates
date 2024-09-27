@@ -1818,6 +1818,59 @@
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/immich/docker-compose.yml"
       }
+    },
+    {
+      "id": 79,
+      "type": 1,
+      "title": "InfluxDB",
+      "description": "Scalable datastore for metrics, events, and real-time analytics.",
+      "categories": ["Database", "Monitoring"],
+      "platform": "linux",
+      "logo": "https://d7umqicpi7263.cloudfront.net/img/product/83e3ab8e-540e-4391-b603-f65174ac0275/ea15d6da-1c4f-409f-8c24-4bbcfbb0d309.png",
+      "image": "influxdb:2",
+      "ports": [
+        "8086/tcp"
+      ],
+      "env": [
+        {
+          "name": "DOCKER_INFLUXDB_INIT_MODE",
+          "label": "Init mode",
+          "default": "setup"
+        },
+        {
+          "name": "DOCKER_INFLUXDB_INIT_USERNAME",
+          "label": "Username",
+          "default": "admin"
+        },
+        {
+          "name": "DOCKER_INFLUXDB_INIT_PASSWORD",
+          "label": "Password",
+          "default": "admin"
+        },
+        {
+          "name": "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN",
+          "label": "InfluxDB Token",
+          "default": "secret"
+        },
+        {
+          "name": "DOCKER_INFLUXDB_INIT_ORG",
+          "label": "InfluxDB Org",
+          "default": "default"
+        },
+        {
+          "name": "DOCKER_INFLUXDB_INIT_BUCKET",
+          "label": "InfluxDB Bucket",
+          "default": "default"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/var/lib/influxdb2"
+        },
+        {
+          "container": "/etc/influxdb2"
+        }
+      ]
     }
   ]
 }
