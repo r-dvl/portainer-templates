@@ -57,7 +57,7 @@
       "type": 1,
       "title": "NodeJS",
       "description": "JavaScript-based platform for server-side and networking applications",
-      "categories": ["development"],
+      "categories": ["Development"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/node.png",
       "image": "node:latest",
@@ -242,9 +242,9 @@
       "id": 14,
       "type": 1,
       "title": "GitLab CE",
-      "description": "Open-source end-to-end software development platform",
+      "description": "Open-source end-to-end software Development platform",
       "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/ee/install/docker.html\" target=\"_blank\">GitLab documentation</a> to get started.",
-      "categories": ["development", "project-management"],
+      "categories": ["Development", "project-management"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
       "image": "gitlab/gitlab-ce:latest",
@@ -715,7 +715,7 @@
       "type": 1,
       "title": "CommandBox",
       "description": "ColdFusion (CFML) CLI",
-      "categories": ["development"],
+      "categories": ["Development"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/ortussolutions-commandbox.png",
       "image": "ortussolutions/commandbox:latest",
@@ -1109,7 +1109,7 @@
       "type": 2,
       "title": "LiveSwitch",
       "description": "A basic LiveSwitch stack with gateway, caching, database and media server",
-      "categories": ["media"],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
@@ -1128,7 +1128,7 @@
       "type": 3,
       "title": "LiveSwitch",
       "description": "A basic LiveSwitch compose with gateway, caching, database and media server",
-      "categories": ["media"],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/liveswitch.png",
       "repository": {
@@ -1688,6 +1688,34 @@
       "volumes": [
         {
           "container": "/config"
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "type": 1,
+      "title": "Code Server",
+      "description": "Code-server is VS Code running on a remote server, accessible through the browser.",
+      "note": "For additional configuration: https://docs.linuxserver.io/images/docker-code-server/#application-setup",
+      "categories": ["Development"],
+      "platform": "linux",
+      "logo": "https://th.bing.com/th/id/R.3919e5b2f737f142a45921320e666382?rik=mkXBaXp%2bAMCTcw&pid=ImgRaw&r=0",
+      "image": "linuxserver/code-server:latest",
+      "ports": [
+        "8443/tcp"
+      ],
+      "volumes": [
+        {
+          "name": "PGID",
+          "label": "PGID"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone"
         }
       ]
     }
