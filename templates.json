@@ -2153,6 +2153,36 @@
           "container": "/DATA"
         }
       ]
+    },
+    {
+      "id": 87,
+      "type": 1,
+      "title": "Tautulli",
+      "description": "A Python based monitoring and tracking tool for Plex Media Server.",
+      "categories": ["Monitoring"],
+      "platform": "linux",
+      "logo": "https://tautulli.com/images/logo-circle.png",
+      "image": "linuxserver/tautulli:latest",
+      "ports": [
+        "8181/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ]
     }
   ]
 }
