@@ -1536,7 +1536,7 @@
     },
     {
       "id": 70,
-      "type": 2,
+      "type": 3,
       "title": "Authentik",
       "description": "Authentik is an open-source Identity Provider that emphasizes flexibility and versatility, with support for a wide set of protocols.",
       "categories": ["Network"],
@@ -1549,7 +1549,8 @@
       "env": [
         {
           "name": "AUTHENTIK_SECRET_KEY",
-          "label": "Password"
+          "label": "Password",
+          "default": "secret"
         }
       ]
     },
@@ -1558,7 +1559,7 @@
       "type": 1,
       "title": "Bazarr",
       "description": "Bazarr is a companion application to Sonarr and Radarr. It manage and download subtitles based on your requirements.",
-      "categories": ["Media"],
+      "categories": ["Arr"],
       "platform": "linux",
       "logo": "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/bazarr-light.png",
       "image": "linuxserver/bazarr:latest",
@@ -1576,15 +1577,18 @@
       "env": [
         {
           "name": "PGID",
-          "label": "PGID"
+          "label": "PGID",
+          "default": "1000"
         },
         {
           "name": "PUID",
-          "label": "PUID"
+          "label": "PUID",
+          "default": "1000"
         },
         {
           "name": "TZ",
-          "label": "Time Zone"
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
         }
       ]
     },
@@ -1612,19 +1616,23 @@
       "env": [
         {
           "name": "PGID",
-          "label": "PGID"
+          "label": "PGID",
+          "default": "1000"
         },
         {
           "name": "PUID",
-          "label": "PUID"
+          "label": "PUID",
+          "default": "1000"
         },
         {
           "name": "TZ",
-          "label": "Time Zone"
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
         },
         {
           "name": "DOCKER_MODS",
-          "label": "Docker mods"
+          "label": "Docker mods",
+          "default": "ghcr.io/linuxserver/mods:universal-calibre"
         }
       ]
     },
@@ -1653,15 +1661,18 @@
       "env": [
         {
           "name": "PGID",
-          "label": "PGID"
+          "label": "PGID",
+          "default": "1000"
         },
         {
           "name": "PUID",
-          "label": "PUID"
+          "label": "PUID",
+          "default": "1000"
         },
         {
           "name": "TZ",
-          "label": "Time Zone"
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
         },
         {
           "name": "CUSTOM_USER",
@@ -1707,15 +1718,18 @@
       "volumes": [
         {
           "name": "PGID",
-          "label": "PGID"
+          "label": "PGID",
+          "default": "1000"
         },
         {
           "name": "PUID",
-          "label": "PUID"
+          "label": "PUID",
+          "default": "1000"
         },
         {
           "name": "TZ",
-          "label": "Time Zone"
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
         }
       ]
     }
