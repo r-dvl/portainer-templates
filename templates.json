@@ -2307,6 +2307,44 @@
           "container": "/etc/ntfy"
         }
       ]
+    },
+    {
+      "id": 92,
+      "type": 1,
+      "title": "Paperless-ngx",
+      "description": "A community-supported supercharged version of paperless: scan, index and archive all your physical documents.",
+      "categories": ["Filesystem"],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/99562962?s=48&v=4",
+      "image": "linuxserver/paperless-ngx:latest",
+      "ports": [
+        "8000/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/data"
+        }
+      ]
     }
   ]
 }
