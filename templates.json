@@ -244,7 +244,7 @@
       "title": "GitLab CE",
       "description": "Open-source end-to-end software Development platform",
       "note": "Default username is <b>root</b>. Check the <a href=\"https://docs.gitlab.com/ee/install/docker.html\" target=\"_blank\">GitLab documentation</a> to get started.",
-      "categories": ["Development", "project-management"],
+      "categories": ["Development", "Project Management"],
       "platform": "linux",
       "logo": "https://portainer-io-assets.sfo2.digitaloceanspaces.com/logos/gitlab_ce.png",
       "image": "gitlab/gitlab-ce:latest",
