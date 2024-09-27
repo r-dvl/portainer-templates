@@ -2427,5 +2427,18 @@
         }
       ]
     },
+    {
+      "id": 95,
+      "type": 3,
+      "title": "Motioneye",
+      "description": "A web frontend for the motion daemon.",
+      "categories": ["Monitoring"],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/101178162?s=48&v=4",
+      "repository": {
+        "url": "https://github.com/r-dvl/portainer-templates",
+        "stackfile": "stacks/motioneye/docker-compose.yml"
+      }
+    }
   ]
 }
