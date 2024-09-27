@@ -1902,9 +1902,14 @@
         },
         {
           "name": "AUTO_UPDATE",
-          "label": "Auto update",
-          "default": "Y",
-          "preset": true
+          "label": "Auto Update",
+          "select": [
+            {
+              "text": "Active",
+              "value": "true",
+              "default": true
+            }
+          ]
         }
       ],
       "volumes": [
