@@ -2077,6 +2077,44 @@
           "container": "/DATA"
         }
       ]
+    },
+    {
+      "id": 85,
+      "type": 1,
+      "title": "Prowlarr",
+      "description": "Prowlarr is an indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps, supporting management of both Torrent Trackers and Usenet Indexers.",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/prowlarr-icon-1024x1024-vyf0hy1t.png",
+      "image": "linuxserver/prowlarr:latest",
+      "ports": [
+        "9696/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ]
     }
   ]
 }
