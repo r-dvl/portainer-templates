@@ -2279,6 +2279,34 @@
           "container": "/config"
         }
       ]
+    },
+    {
+      "id": 91,
+      "type": 1,
+      "title": "Ntfy.sh",
+      "description": "ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service.",
+      "categories": ["Monitoring"],
+      "platform": "linux",
+      "logo": "https://ntfy.sh/_next/static/media/logo.077f6a13.svg",
+      "image": "binwiederhier/ntfy:latest",
+      "ports": [
+        "80/tcp"
+      ],
+      "env": [
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/var/cache/ntfy"
+        },
+        {
+          "container": "/etc/ntfy"
+        }
+      ]
     }
   ]
 }
