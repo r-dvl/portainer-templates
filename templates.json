@@ -1805,7 +1805,7 @@
       "description": "Calibre-Web but automated and with Calibre features! Fully automate and simplify your eBook set up!",
       "categories": ["Media"],
       "platform": "linux",
-      "logo": "https://th.bing.com/th/id/OIP.xSjnEbkYFaizgbOJSjF_twAAAA?rs=1&pid=ImgDetMain",
+      "logo": "https://th.bing.com/th/id/R.60f62bc8e9ee1df35780b8f96753f433?rik=ZIiztdszqSgXHw&pid=ImgRaw&r=0",
       "image": "crocodilestick/calibre-web-automated:latest",
       "ports": [
         "8083/tcp"
