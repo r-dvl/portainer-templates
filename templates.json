@@ -1797,6 +1797,49 @@
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/motioneye/docker-compose.yml"
       }
+    },
+    {
+      "id": 96,
+      "type": 1,
+      "title": "Calibre Web Automated",
+      "description": "Calibre-Web but automated and with Calibre features! Fully automate and simplify your eBook set up!",
+      "categories": ["Arr"],
+      "platform": "linux",
+      "logo": "https://th.bing.com/th/id/OIP.xSjnEbkYFaizgbOJSjF_twAAAA?rs=1&pid=ImgDetMain",
+      "image": "crocodilestick/calibre-web-automated:latest",
+      "ports": [
+        "8083/tcp"
+      ],
+      "env": [
+        {
+          "name": "PGID",
+          "label": "PGID",
+          "default": "1000"
+        },
+        {
+          "name": "PUID",
+          "label": "PUID",
+          "default": "1000"
+        },
+        {
+          "name": "TZ",
+          "label": "Time Zone",
+          "default": "Europe/Madrid"
+        },
+        {
+          "name": "DOCKER_MODS",
+          "label": "Docker mods",
+          "default": "lscr.io/linuxserver/mods:universal-calibre-v7.16.0"
+        }
+      ],
+      "volumes": [
+        {
+          "container": "/config"
+        },
+        {
+          "container": "/DATA"
+        }
+      ]
     }
   ]
 }
