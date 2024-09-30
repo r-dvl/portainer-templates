@@ -1837,7 +1837,10 @@
           "container": "/config"
         },
         {
-          "container": "/DATA"
+          "container": "/cwa-book-ingest"
+        },
+        {
+          "container": "/calibre-library"
         }
       ]
     }
