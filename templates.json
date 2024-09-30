@@ -1852,7 +1852,7 @@
       "categories": ["Home Lab"],
       "platform": "linux",
       "logo": "https://avatars.githubusercontent.com/u/23010996?s=48&v=4",
-      "image": "crocodilestick/calibre-web-automated:latest",
+      "image": "instrumentisto/postfix",
       "ports": [
         "25/tcp"
       ],
