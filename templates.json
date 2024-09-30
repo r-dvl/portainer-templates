@@ -1843,6 +1843,41 @@
           "container": "/calibre-library"
         }
       ]
+    },
+    {
+      "id": 97,
+      "type": 1,
+      "title": "Postfix",
+      "description": "SMTP Server",
+      "categories": ["Home Lab"],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/23010996?s=48&v=4",
+      "image": "crocodilestick/calibre-web-automated:latest",
+      "ports": [
+        "25/tcp"
+      ],
+      "env": [
+        {
+          "name": "MYHOSTNAME",
+          "label": "Hostname",
+          "default": "smtp.tudominio.com"
+        },
+        {
+          "name": "RELAYHOST",
+          "label": "Relay host",
+          "default": "[smtp.gmail.com]:587"
+        },
+        {
+          "name": "SMTP_USER",
+          "label": "E-Mail",
+          "default": "tucorreo@gmail.com"
+        },
+        {
+          "name": "SMTP_PASSWORD",
+          "label": "Password",
+          "default": "secret"
+        }
+      ]
     }
   ]
 }
