@@ -1803,7 +1803,7 @@
       "type": 1,
       "title": "Calibre Web Automated",
       "description": "Calibre-Web but automated and with Calibre features! Fully automate and simplify your eBook set up!",
-      "categories": ["Arr"],
+      "categories": ["Media"],
       "platform": "linux",
       "logo": "https://th.bing.com/th/id/OIP.xSjnEbkYFaizgbOJSjF_twAAAA?rs=1&pid=ImgDetMain",
       "image": "crocodilestick/calibre-web-automated:latest",
