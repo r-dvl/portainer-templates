@@ -1902,7 +1902,7 @@
       "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.",
       "categories": ["Development"],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kavita-logo.png",
+      "logo": "https://th.bing.com/th/id/R.e627f912055f8dc1f49835f811223adf?rik=KPBNSxxPF0gYaA&pid=ImgRaw&r=0",
       "image": "nodered/node-red:latest",
       "ports": [
         "1880/tcp"
