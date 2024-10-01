@@ -1894,6 +1894,24 @@
           "container": "/data"
         }
       ]
+    },
+    {
+      "id": 98,
+      "type": 1,
+      "title": "Node-RED",
+      "description": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.",
+      "categories": ["Development"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/kavita-logo.png",
+      "image": "nodered/node-red:latest",
+      "ports": [
+        "1880/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/data"
+        }
+      ]
     }
   ]
 }
