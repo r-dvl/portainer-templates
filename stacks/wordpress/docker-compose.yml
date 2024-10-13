@@ -6,7 +6,7 @@ services:
     environment:
       - MYSQL_DATABASE=wordpress
     volumes:
-      - dbdata:/var/lib/mysql
+      - /opt/wordpress/data:/var/lib/mysql
     command: '--default-authentication-plugin=mysql_native_password'
 
   wordpress:
@@ -21,4 +21,4 @@ services:
       - WORDPRESS_DB_PASSWORD=$MYSQL_PASSWORD
       - WORDPRESS_DB_NAME=wordpress
     volumes:
-      - wordpress:/var/www/html
+      - /DATA/AppData/wordpress/data:/var/www/html
