@@ -5,9 +5,9 @@ services:
     restart: unless-stopped
     environment:
       - MYSQL_DATABASE=wordpress
-      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_ROOT_PASSWORD=Pa$$w0rd!
       - MYSQL_USER=wordpress
-      - MYSQL_PASSWORD=secret
+      - MYSQL_PASSWORD=Pa$$w0rd!
     volumes:
       - /opt/wordpress/data:/var/lib/mysql
 
@@ -22,7 +22,7 @@ services:
     environment:
       - WORDPRESS_DB_HOST=db:3306
       - WORDPRESS_DB_USER=wordpress
-      - WORDPRESS_DB_PASSWORD=secret
+      - WORDPRESS_DB_PASSWORD=Pa$$w0rd!
       - WORDPRESS_DB_NAME=wordpress
     volumes:
       - /DATA/AppData/wordpress:/var/www/html

@@ -1929,17 +1929,17 @@
         {
           "name": "MYSQL_ROOT_PASSWORD",
           "label": "MySQL root password",
-          "default": "secret"
+          "default": "Pa$$w0rd!"
         },
         {
           "name": "MYSQL_USER",
           "label": "MySQL User",
-          "default": "secret"
+          "default": "wordpress"
         },
         {
           "name": "MYSQL_PASSWORD",
           "label": "MySQL user password",
-          "default": "secret"
+          "default": "Pa$$w0rd!"
         }
       ]
     }
