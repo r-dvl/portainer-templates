@@ -1942,6 +1942,64 @@
           "default": "Pa$$w0rd!"
         }
       ]
+    },
+    {
+      "id": 100,
+      "type": 1,
+      "title": "S-PDF",
+      "description": "All in one PDF tools.",
+      "categories": ["Tools"],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/139791695?s=48&v=4",
+      "image": "frooodle/s-pdf:latest",
+      "ports": [
+        "8080/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/usr/share/tessdata"
+        },
+        {
+          "container": "/configs"
+        }
+      ],
+      "env": [
+        {
+          "name": "DOCKER_ENABLE_SECURITY",
+          "label": "Docker enable security",
+          "select": [
+            {
+              "text": "Enabled",
+              "value": "true",
+              "default": false
+            },
+            {
+              "text": "Disabled",
+              "value": "false",
+              "default": true
+            }
+          ]        },
+        {
+          "name": "INSTALL_BOOK_AND_ADVANCED_HTML_OPS",
+          "label": "Install book and advanced HTML options",
+          "select": [
+            {
+              "text": "Enabled",
+              "value": "true",
+              "default": false
+            },
+            {
+              "text": "Disabled",
+              "value": "false",
+              "default": true
+            }
+          ]        },
+        {
+          "name": "LANGS",
+          "label": "Language",
+          "default": "es_ES"
+        }
+      ]
     }
   ]
 }
