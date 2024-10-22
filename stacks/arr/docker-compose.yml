@@ -1,4 +1,19 @@
 services:
+  bazarr:
+    container_name: bazarr
+    image: linuxserver/bazarr:latest
+    environment:
+      PGID: "0"
+      PUID: "0"
+      TZ: Europe/Madrid
+    network_mode: bridge
+    ports:
+      - "6767:6767"
+    volumes:
+      - /DATA/AppData/bazarr/config:/config
+      - /DATA:/DATA
+    restart: unless-stopped
+
   overseerr:
     image: lscr.io/linuxserver/overseerr:latest
     container_name: overseerr
@@ -21,10 +36,10 @@ services:
       - TZ=Europe/Madrid
     ports:
       - "7878:7878"
-    restart: unless-stopped
     volumes:
       - /DATA/AppData/radarr/config:/config
       - /DATA:/DATA
+    restart: unless-stopped
 
   sonarr:
     image: linuxserver/sonarr:latest
@@ -35,10 +50,10 @@ services:
       - TZ=Europe/Madrid
     ports:
       - "8989:8989"
-    restart: unless-stopped
     volumes:
       - /DATA/AppData/sonarr/config:/config
       - /DATA:/DATA
+    restart: unless-stopped
 
   plex:
     image: linuxserver/plex:latest
@@ -64,7 +79,7 @@ services:
       - TZ=Europe/Madrid
     ports:
       - "8080:8080"
-    restart: unless-stopped
     volumes:
       - /DATA/AppData/qbittorrent/config:/config
       - /DATA:/DATA
+    restart: unless-stopped
