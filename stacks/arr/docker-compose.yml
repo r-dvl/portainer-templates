@@ -27,6 +27,19 @@ services:
       - 5055:5055
     restart: unless-stopped
 
+  prowlarr:
+    image: linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PGID=0
+      - PUID=0
+      - TZ=Europe/Madrid
+    ports:
+      - "9696:9696"
+    volumes:
+      - /DATA/AppData/prowlarr/config:/config
+    restart: unless-stopped
+
   radarr:
     image: linuxserver/radarr:latest
     container_name: radarr
