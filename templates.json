@@ -2000,6 +2000,33 @@
           "default": "es_ES"
         }
       ]
+    },
+    {
+      "id": 101,
+      "type": 1,
+      "title": "Cloudflare DDNS",
+      "description": "Cloudflare Dynamic DNS updater",
+      "categories": ["Network"],
+      "platform": "linux",
+      "logo": "https://static-00.iconduck.com/assets.00/cloudflare-icon-2048x926-mxn8koxq.png",
+      "image": "oznu/cloudflare-ddns:latest",
+      "env": [
+        {
+          "name": "API_KEY",
+          "label": "Cloudflare API Key",
+          "default": ""
+        },
+        {
+          "name": "ZONE",
+          "label": "Domain",
+          "default": "example.com"
+        },
+        {
+          "name": "SUBDOMAIN",
+          "label": "Subdomain",
+          "default": ""
+        }
+      ]
     }
   ]
 }
