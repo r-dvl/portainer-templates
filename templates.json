@@ -2027,6 +2027,19 @@
           "default": ""
         }
       ]
+    },
+    {
+      "id": 102,
+      "type": 3,
+      "title": "Arr Stack",
+      "description": "Includes Sonarr, Radarr, Plex, QBittorrent and Overseerr",
+      "categories": ["Media"],
+      "platform": "linux",
+      "logo": "https://w7.pngwing.com/pngs/514/119/png-transparent-the-pirate-bay-hd-logo.png",
+      "repository": {
+        "url": "https://github.com/r-dvl/portainer-templates",
+        "stackfile": "stacks/arr/docker-compose.yml"
+      }
     }
   ]
 }

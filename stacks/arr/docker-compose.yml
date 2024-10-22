@@ -1,0 +1,70 @@
+services:
+  overseerr:
+    image: lscr.io/linuxserver/overseerr:latest
+    container_name: overseerr
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Europe/Madrid
+    volumes:
+      - /DATA/AppData/overseerr/config:/config
+    ports:
+      - 5055:5055
+    restart: unless-stopped
+
+  radarr:
+    image: linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PGID=0
+      - PUID=0
+      - TZ=Europe/Madrid
+    ports:
+      - "7878:7878"
+    restart: unless-stopped
+    volumes:
+      - /DATA/AppData/radarr/config:/config
+      - /DATA:/DATA
+
+  sonarr:
+    image: linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PGID=0
+      - PUID=0
+      - TZ=Europe/Madrid
+    ports:
+      - "8989:8989"
+    restart: unless-stopped
+    volumes:
+      - /DATA/AppData/sonarr/config:/config
+      - /DATA:/DATA
+
+  plex:
+    image: linuxserver/plex:latest
+    container_name: plex
+    environment:
+      - PGID=0
+      - PUID=0
+      - VERSION=docker
+    ports:
+      - "32400:32400"
+    volumes:
+      - /DATA/AppData/plex/config:/config
+      - /DATA/Media:/Media
+      - /DATA/AppData/plex/PlexDBRepair:/PlexDBRepair
+    restart: unless-stopped
+
+  qbittorrent:
+    image: hotio/qbittorrent:latest
+    container_name: qbittorrent
+    environment:
+      - PGID=0
+      - PUID=0
+      - TZ=Europe/Madrid
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    volumes:
+      - /DATA/AppData/qbittorrent/config:/config
+      - /DATA:/DATA
