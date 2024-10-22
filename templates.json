@@ -2040,6 +2040,29 @@
         "url": "https://github.com/r-dvl/portainer-templates",
         "stackfile": "stacks/arr/docker-compose.yml"
       }
+    },
+    {
+      "id": 101,
+      "type": 1,
+      "title": "Nginx Proxy Manager",
+      "description": "Nginx with WEb UI.",
+      "categories": ["Webserver"],
+      "platform": "linux",
+      "logo": "https://avatars.githubusercontent.com/u/88089605?s=48&v=4",
+      "image": "docker.io/jc21/nginx-proxy-manager:latest",
+      "ports": [
+        "80/tcp",
+        "81/tcp",
+        "443/tcp"
+      ],
+      "volumes": [
+        {
+          "container": "/data"
+        },
+        {
+          "container": "/etc/letsencrypt"
+        }
+      ]
     }
   ]
 }
