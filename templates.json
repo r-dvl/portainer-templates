@@ -1684,7 +1684,8 @@
         {
           "container": "/etc/ntfy"
         }
-      ]
+      ],
+      "command": "serve"
     },
     {
       "id": 92,
